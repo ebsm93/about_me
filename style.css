@@ -13,15 +13,28 @@ body {
     background-attachment: fixed;
 }
 
+
 .page-wrap {
+    background-color: black;
+    animation: bg-transition 10s forwards;
     display: grid;
     justify-content: center;
     text-align: center;
     position: relative;
     /* height: 100%; */
-
+    
 }
 
+@keyframes bg-transition {
+    from {
+        background-color: rgb(0, 0, 0);
+    }
+
+    to {
+        background-color: rgb(0, 0, 0, 0);
+    }
+    
+}
 header {
     position: sticky;
     position: -webkit-sticky;
@@ -42,18 +55,35 @@ h1 {
 }
 
 picture {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     /* object-fit: fill; */
     /* display: flex; */
     /* justify-content: center; */
 }
 
 img {
-    
+    border: 2px groove rgb(26, 28, 155);
+    border-radius: 5px;
+    box-shadow: -4px 4px 5px rgb(1, 44, 83);
     height: auto;
     /* min-width: 80vw; */
-    width: 50%;
+    width: clamp(10vw, 50%, 30vw);
+    /* width: 50%; */
+
     margin: 1vw;
+
+    animation: img-trans 7s forwards;
+}
+
+@keyframes img-trans {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+    
 }
 
 @media (max-width: 500px){
