@@ -1,23 +1,44 @@
 html {
-
+    color: antiquewhite;
+    /* height: 100%; */
 }
 
 body {
-    padding: 1vw;
-    margin: 0;
-    border: 1px solid red;
-
+    /* height: 100%; */
+    margin: 0px;
+    /* border: 1px solid red; */
+    background-image: url("./images/earth-space-large.jpg") ;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .page-wrap {
     display: grid;
     justify-content: center;
     text-align: center;
+    position: relative;
+    /* height: 100%; */
 
 }
 
-h1,h2 {
-    /* text-align: center; */
+header {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    display: grid;
+    /* justify-content: center;     */
+    /* width: 100%; */
+}
+
+h1 {
+    border-top: 1px solid antiquewhite;
+    border-bottom: 1px solid antiquewhite;
+    border-style: groove;
+    /* box-shadow: inset 1px 1px 2px white; */
+    /* border-radius: 3px; */
+    padding: 4px 20px;
+    background-color: black;
 }
 
 picture {
@@ -31,13 +52,13 @@ img {
     
     height: auto;
     /* min-width: 80vw; */
-    width: 100%;
+    width: 50%;
     margin: 1vw;
 }
 
 @media (max-width: 500px){
     img {
-        width: 80%;
+        width: 70%;
         object-fit: fill;
     }
 }
