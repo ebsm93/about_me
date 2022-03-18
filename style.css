@@ -64,13 +64,7 @@ header {
             /* width: 45%; */
         }
     }
-
-
-
-
-
-
-
+    
 h1 {
     border: 1px solid white;
     /* border-top: 1px solid antiquewhite;
@@ -82,11 +76,22 @@ h1 {
     background-color: black;
 }
 
-picture {
-    /* border: 1px solid blue; */
-    /* object-fit: fill; */
-    /* display: flex; */
-    /* justify-content: center; */
+.intro-text>h2 {
+    animation: who-am-i 3s forwards;
+}
+
+@keyframes who-am-i {
+    from {
+        /* font-size: 16px; */
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+        transform: scale(1.2);
+        /* font-size: inherit; */
+    }
+    
 }
 
 img {
